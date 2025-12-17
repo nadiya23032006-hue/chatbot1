@@ -16,7 +16,7 @@ def chat(request: ChatRequest):
     if not api_key:
         raise HTTPException(status_code=500, detail="QWEN_API_KEY belum di-set di environment.")
 
-    url = "https://router.huggingface.co/api/v1/llm/Qwen/Qwen-7B-Chat"
+    url = "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo"
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
