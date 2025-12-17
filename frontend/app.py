@@ -7,8 +7,8 @@ st.set_page_config(page_title="Chatbot Kampus Vokasi", layout="wide")
 st.title("Chatbot Kampus Vokasi 💬")
 
 # --- Load data ---
-txt_path = "data.txt"
-json_path = "data.json"
+txt_path = os.path.join("frontend", "data.txt")
+json_path = os.path.join("frontend", "data.json")
 
 txt_content = open(txt_path, "r", encoding="utf-8").read() if os.path.exists(txt_path) else ""
 json_content = ""
